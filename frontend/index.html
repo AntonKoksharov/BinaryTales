@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ФинСмарт - Дашборд</title>
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+  <div class="app-container">
+    
+    <!-- ЛЕВОЕ МЕНЮ -->
+    <aside class="sidebar">
+      <div class="user-profile">
+        <div class="avatar"></div>
+        <span>alex01@gmail.com</span>
+      </div>
+      
+      <nav class="menu">
+        <!-- data-page="dashboard" - это ID для переключения -->
+        <button class="menu-item active" data-page="dashboard">Дашборд</button>
+        <button class="menu-item" data-page="operations">Операция</button>
+        <button class="menu-item" data-page="import">Импорт</button>
+        <button class="menu-item" data-page="analytics">Аналитика</button>
+        <button class="menu-item" data-page="ai">ИИ-Анализ</button>
+        <button class="menu-item" data-page="categories">Категории</button>
+        <button class="menu-item" data-page="discounts">Скидки</button>
+        <button class="menu-item" data-page="goals">Цели</button>
+        <button class="menu-item" data-page="achievements">Достижения</button>
+        <button class="menu-item" data-page="knowledge">База знаний</button>
+      </nav>
+      
+      <div class="sidebar-bottom">
+        <button class="menu-item" data-page="settings">Настройки</button>
+      </div>
+    </aside>
+
+    <!-- ПРАВАЯ ЧАСТЬ (Контент) -->
+    <main class="main-content">
+      <!-- Верхняя панель -->
+      <header class="topbar">
+        <h2 id="greeting">Привет, Александр!</h2>
+        <div class="topbar-controls">
+          <button class="btn-date">Август 2026</button>
+          <button class="btn-icon"></button>
+          <button class="btn-search">Поиск</button>
+        </div>
+      </header>
+
+      <!-- Сюда будет вставляться контент вкладок -->
+      <div id="page-content">
+        <!-- Это контент Дашборда (показывается по умолчанию) -->
+        <div id="view-dashboard">
+          <!-- Карточки с цифрами -->
+          <section class="stats-grid">
+            <div class="stat-card">
+              <p class="stat-title">Общий баланс</p>
+              <p class="stat-value">125 450 ₽</p>
+            </div>
+            <div class="stat-card">
+              <p class="stat-title">Доходы</p>
+              <p class="stat-value income">45 200 ₽</p>
+            </div>
+            <div class="stat-card">
+              <p class="stat-title">Обязательные расходы</p>
+              <p class="stat-value expense">38 400 ₽</p>
+            </div>
+            <div class="stat-card">
+              <p class="stat-title">Сэкономлено</p>
+              <p class="stat-value">12 150 ₽</p>
+            </div>
+          </section>
+
+          <!-- Сетка для графиков (пока заглушки) -->
+          <section class="dashboard-grid">
+            <div class="card"><p>Здесь будет график расходов</p></div>
+            <div class="card"><p>Здесь будет динамика трат</p></div>
+            <div class="card"><p>Здесь будут последние операции</p></div>
+          </section>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

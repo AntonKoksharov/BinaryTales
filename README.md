@@ -1,5 +1,5 @@
-# Binary Tales
-Команда Binary Tales.
+# BinaryTales
+Команда BinaryTales.
 
 Цель проекта «ФинСмарт»:
 
@@ -26,4 +26,4 @@ Vanilla JavaScript - клиентская логика и асинхронное
 Chart.js - визуализация графиков расходов и статистики
 
 
-Repository for Binary Tales.
+Repository for BinaryTales.
